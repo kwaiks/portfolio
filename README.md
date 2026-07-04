@@ -1,4 +1,4 @@
-# portfolio-web — AI-powered portfolio (Alexander Jacquelline)
+# AI-powered portfolio (Alexander Jacquelline)
 
 A single-page **Next.js 15** portfolio whose differentiator is a live, **retrieval-grounded AI assistant**. The assistant answers questions about my work using RAG over this site's own content, with guardrails (relevance gate + out-of-scope refusal) and a pre-ship **eval gate** (≥90% acceptable answers, 0 hallucinations).
 
