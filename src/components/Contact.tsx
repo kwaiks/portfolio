@@ -36,7 +36,7 @@ export function Contact() {
         setStatus("error");
         setErrorMsg(
           data.emailed === false && data.persisted
-            ? "Saved — but the email notification didn't send. Alexander still received your message."
+            ? "Saved — but the email notification didn't send. I still received your message."
             : "Something went wrong. Please email alexanderjacq02@gmail.com directly.",
         );
       }
@@ -51,8 +51,8 @@ export function Contact() {
       <div className="rounded-xl border border-emerald-500/40 bg-emerald-500/5 p-6">
         <p className="font-mono text-sm text-emerald-400">{`// message sent`}</p>
         <p className="mt-2 text-zinc-300">
-          Thanks — your message is logged and on its way to Alexander&rsquo;s
-          inbox. He&rsquo;ll reply to your email directly.
+          Thanks — your message is logged and on its way to my
+          inbox. I&rsquo;ll reply to your email directly.
         </p>
         <button
           type="button"
@@ -68,9 +68,7 @@ export function Contact() {
   return (
     <div className="space-y-6">
       <p className="text-[15px] text-zinc-400">
-        Recruiter or hiring manager? Send a note — it lands in
-        Alexander&rsquo;s inbox with your address as the reply-to, and is
-        logged so nothing gets lost. He&rsquo;s open to remote Applied AI /
+        Recruiter or hiring manager? Send a note. I open to remote Applied AI /
         senior fullstack roles.
       </p>
       <form onSubmit={onSubmit} className="space-y-4">
@@ -84,8 +82,8 @@ export function Contact() {
           className="hidden"
         />
         <div className="grid gap-4 sm:grid-cols-2">
-          <Field label="name" name="name" placeholder="Jane Recruiter" required />
-          <Field label="email" name="email" type="email" placeholder="jane@company.com" required />
+          <Field label="name" name="name" placeholder="John Doe" required />
+          <Field label="email" name="email" type="email" placeholder="john@company.com" required />
         </div>
         <div>
           <label htmlFor="message" className="font-mono text-xs uppercase tracking-wider text-emerald-400">
@@ -96,7 +94,7 @@ export function Contact() {
             name="message"
             required
             rows={4}
-            placeholder="Tell Alexander about the role…"
+            placeholder="Tell me about the role…"
             className="mt-2 w-full resize-y rounded-lg border border-zinc-800 bg-zinc-900/60 px-3 py-2 text-[15px] text-zinc-200 placeholder:text-zinc-600 focus:border-emerald-500 focus:outline-none"
           />
         </div>

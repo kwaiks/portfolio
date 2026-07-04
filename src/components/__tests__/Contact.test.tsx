@@ -18,8 +18,8 @@ function res(body: unknown, ok = true): Response {
 }
 
 async function fillAndSubmit(user: User) {
-  await user.type(screen.getByLabelText(/^name$/i), "Jane Recruiter");
-  await user.type(screen.getByLabelText(/email/i), "jane@company.com");
+  await user.type(screen.getByLabelText(/^name$/i), "John Doe");
+  await user.type(screen.getByLabelText(/email/i), "john@company.com");
   await user.type(screen.getByLabelText(/message/i), "Hello Alexander — great portfolio.");
   await user.click(screen.getByRole("button", { name: /send message/i }));
 }

@@ -23,7 +23,7 @@ export type ContactResult = {
 /**
  * Persist-first contact handler: the submission row is saved BEFORE we
  * attempt email, so a message is never lost even if the email provider
- * fails. Email Reply-To is the sender, so Alexander can reply directly.
+ * fails. Email Reply-To is the sender, so we can reply directly.
  */
 export async function submitContact(
   raw: unknown,
